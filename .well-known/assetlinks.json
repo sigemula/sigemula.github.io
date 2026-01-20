@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.safenter.app",
+      "sha256_cert_fingerprints": [
+        "F2:7F:05:73:53:69:D7:FC:17:63:B9:38:35:93:7A:ED:10:D4:6E:42:C6:6F:7B:0E:08:CF:D6:C7:BC:E5:FF:D9"
+      ]
+    }
+  }
+]
