@@ -1,17 +1,296 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Safenter Links</title>
-  </head>
-  <body>
-    <h1>Safenter Links</h1>
-    <p>Test pages for Android App Links.</p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Safenter — Access systems designed to grow</title>
+  <meta name="description" content="Access systems designed to grow — from private homes to professional installations." />
+  <meta name="theme-color" content="#0b5fff" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <ul>
-      <li><a href="./debug/">Open /debug</a></li>
-      <li><a href="./.well-known/assetlinks.json">assetlinks.json</a></li>
-    </ul>
-  </body>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">Safenter</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#for" class="nav-link">For</a>
+        <a href="#what" class="nav-link">What</a>
+        <a href="#how" class="nav-link">Process</a>
+        <a href="#trust" class="nav-link">Trust</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="badge">Hardware • Firmware • Software</p>
+          <h1>Access systems designed to grow.</h1>
+          <p class="lead">
+            From private homes to professional installations — reliable, maintainable, and built with privacy in mind.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <a class="btn" href="#video">Watch demo</a>
+          </div>
+
+          <div class="hero-notes">
+            <div class="note">
+              <div class="note-title">Local-first operation</div>
+              <div class="note-body">Designed to work locally and remain usable even without continuous cloud connectivity.</div>
+            </div>
+            <div class="note">
+              <div class="note-title">Built for real deployments</div>
+              <div class="note-body">Long lifecycle, production testing, and compliance-oriented documentation.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-top">
+            <div class="card-dot"></div>
+            <div class="card-dot"></div>
+            <div class="card-dot"></div>
+          </div>
+          <div class="card-body">
+            <div class="stat">
+              <div class="stat-k">Scope</div>
+              <div class="stat-v">End-to-end</div>
+            </div>
+            <div class="stat">
+              <div class="stat-k">Deployment</div>
+              <div class="stat-v">Home → Building → Integrators</div>
+            </div>
+            <div class="stat">
+              <div class="stat-k">Focus</div>
+              <div class="stat-v">Security & privacy by design</div>
+            </div>
+            <div class="divider"></div>
+            <p class="muted">
+              We share technical details and integration materials upon request (and NDA if needed).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- FOR -->
+    <section id="for" class="section">
+      <div class="container">
+        <h2>Designed for</h2>
+        <p class="section-lead">
+          A single platform that makes sense for individual users today and scales to professional deployments tomorrow.
+        </p>
+
+        <div class="grid-3">
+          <div class="tile">
+            <h3>Private homes</h3>
+            <p>Everyday convenience with reliable operation and clear user experience.</p>
+          </div>
+          <div class="tile">
+            <h3>Apartment buildings</h3>
+            <p>Multi-tenant scenarios, shared access, and long-term maintainability.</p>
+          </div>
+          <div class="tile">
+            <h3>Installers & integrators</h3>
+            <p>Manufacturing-ready approach, production testing, and support for compliance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT -->
+    <section id="what" class="section alt">
+      <div class="container">
+        <h2>What we build</h2>
+        <p class="section-lead">
+          Complete access solutions — the product, the software, and the production process.
+        </p>
+
+        <div class="grid-2">
+          <div class="tile">
+            <h3>Devices</h3>
+            <ul class="list">
+              <li>Electronic access peripherals</li>
+              <li>Installer-friendly deployment</li>
+              <li>Long product lifecycle</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h3>Apps & tooling</h3>
+            <ul class="list">
+              <li>Mobile-based access workflows</li>
+              <li>Local control and recovery options</li>
+              <li>Structured test and diagnostic flows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="section">
+      <div class="container">
+        <h2>How we work</h2>
+        <p class="section-lead">
+          Engineering-first development with production and compliance in mind.
+        </p>
+
+        <div class="timeline">
+          <div class="step">
+            <div class="step-n">1</div>
+            <div class="step-c">
+              <h3>Design & verification</h3>
+              <p>We design hardware and software and prepare manufacturing-ready documentation.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">2</div>
+            <div class="step-c">
+              <h3>Manufacturing with partners</h3>
+              <p>Selected partners manufacture and assemble. Substitutions or changes require approval.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">3</div>
+            <div class="step-c">
+              <h3>Production testing</h3>
+              <p>We provide test firmware/software and procedures for programming and functional testing.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">4</div>
+            <div class="step-c">
+              <h3>Compliance support</h3>
+              <p>We support documentation, test modes, and certification preparation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section id="trust" class="section alt">
+      <div class="container">
+        <h2>Trust & transparency</h2>
+        <p class="section-lead">
+          Clear principles help users, partners, and reviewers understand what to expect.
+        </p>
+
+        <div class="grid-3">
+          <div class="tile">
+            <h3>Privacy</h3>
+            <p>We aim to minimize data collection and use it only when necessary for the product to function.</p>
+          </div>
+          <div class="tile">
+            <h3>Local usability</h3>
+            <p>Designed to remain useful without requiring continuous cloud connectivity.</p>
+          </div>
+          <div class="tile">
+            <h3>Responsible disclosure</h3>
+            <p>Technical details and integration information are shared upon request (and NDA if needed).</p>
+          </div>
+        </div>
+
+        <div class="links-row">
+          <a class="link-pill" href="privacy.html">Privacy Policy</a>
+          <a class="link-pill" href="terms.html">Terms of Use</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="section">
+      <div class="container">
+        <h2>Demo video</h2>
+        <p class="section-lead">
+          Concept demonstration. Final product and configuration may vary.
+        </p>
+
+        <div class="video-box">
+          <!-- Replace the iframe src with your YouTube/Vimeo embed URL -->
+          <iframe
+            title="Safenter demo"
+            src="about:blank"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="video-placeholder">
+            <div class="video-icon">▶</div>
+            <div>
+              <div class="video-title">Add your video embed</div>
+              <div class="muted">Replace <code>src</code> in the iframe with your embed link.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p class="section-lead">
+            Interested in cooperation, pilot deployments, or early access?
+            Send us a short message — we’ll respond with the next steps.
+          </p>
+
+          <div class="contact-cards">
+            <div class="tile">
+              <h3>Email</h3>
+              <p class="muted">Use a company email if possible (helps trust during reviews).</p>
+              <p><a class="link" href="mailto:hello@example.com">hello@example.com</a></p>
+            </div>
+            <div class="tile">
+              <h3>Location</h3>
+              <p>EU-based development</p>
+              <p class="muted">Exact address shared upon request.</p>
+            </div>
+          </div>
+
+          <p class="tiny muted">
+            © <span id="y"></span> Safenter. All rights reserved.
+          </p>
+        </div>
+
+        <div class="tile contact-side">
+          <h3>What we can share</h3>
+          <ul class="list">
+            <li>General overview and demo</li>
+            <li>Pilot deployment options</li>
+            <li>Manufacturing and testing approach</li>
+            <li>Technical documentation under NDA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="muted">Safenter</div>
+      <div class="footer-links">
+        <a href="privacy.html" class="nav-link">Privacy</a>
+        <a href="terms.html" class="nav-link">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
