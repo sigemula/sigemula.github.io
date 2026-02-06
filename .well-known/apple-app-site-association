@@ -1,20 +1,11 @@
 {
-    "applinks": {
-        "apps": [],
-        "details": [{
-            "appIDs": [ "XD9L9HGJ8Y.lt.ito.smart-lock" ],
-            "appID": "XD9L9HGJ8Y.lt.ito.smart-lock",
-            "paths": [
-                "/d"
-            ],
-            "components": [
-                {
-                    "/": "/d"
-                }
-            ]
-        }]
-    },
-   "webcredentials": {
-      "apps": [ "XD9L9HGJ8Y.lt.ito.smart-lock" ]
-   }
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "XD9L9HGJ8Y.lt.ito.smart-lock",
+        "paths": [ "/d/*"]
+      }
+    ]
+  }
 }
