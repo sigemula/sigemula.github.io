@@ -2,138 +2,362 @@
 <html lang="lt">
 <head>
   <meta charset="UTF-8" />
-  <title>Safenter – Privatumo politika</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safenter Privacy Policy / Privatumo politika</title>
   <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #0f766e;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 16px;
-      color: #222;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
     }
-    h1, h2 {
-      line-height: 1.3;
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
     }
-    hr {
-      margin: 40px 0;
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: var(--accent);
+    }
+
+    p, li {
+      font-size: 16px;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .lang-switch button {
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .lang-section {
+      display: none;
+    }
+
+    .lang-section.active {
+      display: block;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 14px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="card">
+      <div class="lang-switch">
+        <button id="btn-lt" class="active" onclick="showLang('lt')">Lietuvių</button>
+        <button id="btn-en" onclick="showLang('en')">English</button>
+      </div>
 
-<h1>Privatumo politika – Safenter</h1>
+      <!-- LT -->
+      <section id="lt" class="lang-section active">
+        <h1>Safenter privatumo politika</h1>
+        <div class="meta">
+          <strong>Paskutinis atnaujinimas:</strong> 2026-03-19<br>
+          <strong>Versija:</strong> 1.0
+        </div>
 
-<p><strong>Paskutinį kartą atnaujinta:</strong> 2026-01-29</p>
+        <h2>1. Įvadas (kas yra Safenter)</h2>
+        <p>Safenter yra mobilioji aplikacija, skirta saugiam fizinių prieigos įrenginių (pvz., durų, vartų ar barjerų) valdymui naudojant išmanųjį telefoną.</p>
+        <p>Aplikacija sąveikauja su Safenter fiziniais įrenginiais, kurie yra prijungti prie elektriškai valdomų užraktų ar kitų prieigos kontrolės mechanizmų. Naudojant Bluetooth Low Energy (BLE) ryšį ir įrenginio artumo nustatymą, aplikacija leidžia vartotojo telefonui aptikti netoliese esantį Safenter įrenginį ir inicijuoti saugią komunikaciją.</p>
+        <p>Priartėjus vartotojui, Safenter įrenginys, gavęs patvirtintą signalą iš aplikacijos, gali automatiškai aktyvuoti elektrinį užraktą ar kitą valdomą mechanizmą.</p>
+        <p>Safenter sistema taip pat leidžia prieigos savininkams valdyti ir suteikti prieigos teises kitiems vartotojams. Vartotojai gali naudotis jiems suteiktomis prieigomis pagal nustatytas sąlygas.</p>
+        <p>Aplikacija veikia fone, kad nuolat galėtų aptikti netoliese esančius Safenter įrenginius ir automatiškai inicijuoti sąveiką, leidžiančią atrakinti valdomus užraktus be papildomų vartotojo veiksmų.</p>
 
-<p>
-Safenter yra mobilioji aplikacija, skirta saugiam prieigos valdymui
-(pvz. durų ar vartų atrakinimui) naudojant „Bluetooth“ ir įrenginio
-jutiklius. Jūsų privatumas mums yra svarbus.
-</p>
+        <h2>2. Kokius duomenis naudoja programa</h2>
+        <p>Programa naudoja šiuos duomenis:</p>
+        <ul>
+          <li>Bluetooth duomenis (įrenginių identifikatoriai, signalų stiprumas (RSSI), ryšio sesijų duomenys ir įrenginių perduodami protokolo duomenys)</li>
+          <li>Lokacijos duomenis (tikslūs įrenginio buvimo vietos duomenys, įskaitant koordinates ir tikslumą)</li>
+          <li>Judėjimo ir jutiklių duomenis (akselerometro, giroskopo, slėgio jutiklio bei žingsnių ir veiklos atpažinimo duomenys)</li>
+          <li>Įrenginio informaciją (įrenginio modelis ir operacinės sistemos versija)</li>
+          <li>Prieigos identifikatorius (unikalūs įrenginių identifikatoriai, prieigos raktai, QR kodai ir per nuorodas perduoti duomenys)</li>
+          <li>Programos konfigūracijos ir nustatymų duomenis (saugomi įrenginyje, o pasirinktinai – vartotojo Google paskyros AppData saugykloje)</li>
+        </ul>
 
-<h2>Kokius duomenis naudojame</h2>
+        <h2>3. Kam naudojami duomenys</h2>
+        <p>Naudojami duomenys yra skirti tik programos funkcionalumui ir saugumui užtikrinti:</p>
+        <ul>
+          <li>Bluetooth duomenys naudojami Safenter įrenginių aptikimui ir saugaus ryšio su jais užmezgimui</li>
+          <li>Lokacijos ir judėjimo duomenys naudojami tam, kad nustatytų, ar naudotojas realiai yra prie konkretaus įėjimo ir natūraliai prie jo artėja. Tai leidžia saugiai automatiškai atrakinti tik tada, kai naudotojas iš tikrųjų priartėja prie prieigos taško, kartu įvertinant galimus saugumo rizikos požymius, tokius kaip vietos klastojimas ar ryšio retransliavimas (relay atakos), kai bandoma imituoti buvimą prie durų iš kitos vietos</li>
+          <li>Įrenginio informacija naudojama programos veikimui optimizuoti ir suderinamumui užtikrinti</li>
+          <li>Prieigos identifikatoriai naudojami prieigos patikrinimui ir saugiam ryšiui su įrenginiais užtikrinti.</li>
+          <li>Programos konfigūracijos ir nustatymų duomenys naudojami vartotojo nustatymams išsaugoti įrenginyje bei, vartotojui pasirinkus, sinchronizuoti tarp jo įrenginių naudojant Google paskyros AppData saugyklą</li>
+        </ul>
 
-<p>Safenter gali naudoti šiuos leidimus ir duomenų tipus:</p>
+        <h2>4. Kur vyksta duomenų apdorojimas</h2>
+        <p>Safenter naudojami Bluetooth, lokacijos, judėjimo ir jutiklių duomenys yra apdorojami vartotojo įrenginyje realiuoju laiku, siekiant užtikrinti aplikacijos funkcionalumą ir saugumą.</p>
+        <p>Programos konfigūracijos, prieigos nustatymai ir prieigos taškų informacija saugomi įrenginyje šifruotu pavidalu, naudojant vietinius saugumo mechanizmus.</p>
+        <p>Jei vartotojas pasirenka įjungti atsarginių kopijų arba sinchronizavimo funkciją, dalis programos duomenų gali būti saugoma vartotojo Google paskyros Google Drive AppData saugykloje. Šie duomenys naudojami tik atsarginių kopijų kūrimui ir atkūrimui tarp vartotojo įrenginių.</p>
+        <p>Safenter nenaudoja vartotojo Google paskyros profilio ar el. pašto duomenų.</p>
 
-<ul>
-  <li><strong>Vietovės duomenys (Location)</strong> – naudojami tik nustatyti, ar vartotojas yra arti konkretaus prieigos taško.</li>
-  <li><strong>Fizinės veiklos duomenys</strong> – naudojami kaip papildoma informacija saugiam ir sąmoningam atrakinimui (pvz. ar vartotojas juda).</li>
-  <li><strong>Bluetooth</strong> – naudojamas ryšiui su netoliese esančiais įrenginiais (durų ar vartų valdikliais).</li>
-</ul>
+        <h2>5. Ar duomenys perduodami tretiesiems asmenims</h2>
+        <p>Safenter neperduoda vartotojo duomenų tretiesiems asmenims reklamos, profiliavimo ar rinkodaros tikslais.</p>
+        <p>Duomenys gali būti perduodami tik tiek, kiek būtina aplikacijos veikimui arba vartotojo pasirinktam funkcionalumui:</p>
+        <ul>
+          <li>Safenter įrenginiams per Bluetooth Low Energy (BLE) ryšį, kai vykdoma saugi komunikacija su prieigos įrenginiu. Šio ryšio metu perduodami prieigos identifikatoriai (rakto identifikatoriai), be pačių raktų perdavimo, naudojami prieigos patikrinimui. Prieigos įrenginiai gali naudoti šiuos identifikatorius įvykių registravimui (pvz., įėjimo laiko fiksavimui) pagal savininko nustatytas taisykles.</li>
+          <li>Google Drive AppData saugyklai, tik tuo atveju, jei vartotojas pats įjungia atsarginių kopijų arba sinchronizavimo funkciją. Aplikacija naudoja tik „drive.appdata“ leidimą ir nerenka vartotojo Google profilio ar el. pašto informacijos.</li>
+        </ul>
+        <p>Išskyrus aukščiau nurodytus atvejus, Safenter naudojami duomenys nėra perduodami tretiesiems asmenims ir lieka vartotojo įrenginyje.</p>
 
-<h2>Kaip apdorojami duomenys</h2>
+        <h2>6. Leidimų (permissions) paaiškinimas</h2>
+        <p>Safenter naudoja tik tuos Android leidimus, kurie yra būtini aplikacijos veikimui, saugiam ryšiui su prieigos įrenginiais ir automatinio atrakinimo funkcijai užtikrinti.</p>
+        <p>Naudojami leidimai:</p>
+        <ul>
+          <li>Bluetooth leidimai (BLUETOOTH_SCAN, BLUETOOTH_CONNECT) naudojami netoliese esančių Safenter įrenginių aptikimui ir saugaus ryšio su jais užmezgimui.</li>
+          <li>Lokacijos leidimai (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, ACCESS_BACKGROUND_LOCATION) naudojami nustatyti, ar naudotojas realiai yra prie konkretaus įėjimo, ir užtikrinti saugų automatinį atrakinimą. Foninės lokacijos leidimas reikalingas tam, kad ši funkcija veiktų ir tada, kai aplikacija nėra aktyviai atverta.</li>
+          <li>Fizinio aktyvumo leidimas (ACTIVITY_RECOGNITION) naudojamas judėjimo būdui nustatyti ir automatinio atrakinimo saugumui užtikrinti.</li>
+          <li>Pranešimų leidimas (POST_NOTIFICATIONS) naudojamas informuoti apie programos veikimą ir prieigos įvykius.</li>
+          <li>Interneto leidimas (INTERNET) naudojamas tik funkcijoms, susijusioms su duomenų sinchronizavimu ir atsarginėmis kopijomis (pvz., Google Drive AppData).</li>
+          <li>Foreground service leidimai (FOREGROUND_SERVICE ir susiję leidimai) naudojami tam, kad aplikacija galėtų veikti fone ir tęsti įrenginių aptikimą bei artumo vertinimą.</li>
+          <li>Leidimas RECEIVE_BOOT_COMPLETED naudojamas aplikacijos veikimui atkurti po įrenginio perkrovimo.</li>
+        </ul>
 
-<ul>
-  <li>Visi duomenys apdorojami <strong>lokaliai įrenginyje</strong>.</li>
-  <li>Duomenys <strong>nėra siunčiami į serverius</strong>.</li>
-  <li>Duomenys <strong>nėra perduodami trečiosioms šalims</strong>.</li>
-  <li>Duomenys <strong>nėra naudojami reklamai ar profiliavimui</strong>.</li>
-</ul>
+        <h2>7. Duomenų saugojimas</h2>
+        <p>Safenter naudojami duomenys pirmiausia saugomi vartotojo įrenginyje.</p>
+        <p>Programos nustatymai, prieigos taškų informacija ir susiję konfigūracijos duomenys saugomi lokaliai, o jautresni duomenys saugomi šifruotu pavidalu, naudojant Android platformos saugumo mechanizmus, įskaitant Android KeyStore.</p>
+        <p>Lokaliai saugomi duomenys apima:</p>
+        <ul>
+          <li>prieigos taškų informaciją;</li>
+          <li>programos nustatymus;</li>
+          <li>automatinio atrakinimo konfigūraciją;</li>
+          <li>su įrenginiais susijusius identifikatorius.</li>
+        </ul>
+        <p>Jei vartotojas įjungia atsarginių kopijų arba sinchronizavimo funkciją, dalis šių duomenų saugoma vartotojo Google Drive AppData saugykloje. Ši funkcija yra pasirenkama ir naudojama tik duomenų atkūrimui tarp vartotojo įrenginių.</p>
+        <p>Safenter saugo duomenis tiek, kiek tai būtina programos veikimui. Lokaliai saugomi duomenys ištrinami pašalinus aplikaciją, o Google Drive AppData duomenys saugomi tol, kol vartotojas neištrina atsarginių kopijų arba neatšaukia prieigos.</p>
 
-<h2>Duomenų sauga</h2>
+        <h2>8. Saugumas</h2>
+        <p>Safenter taiko technines priemones, skirtas apsaugoti vartotojo duomenis ir užtikrinti saugų prieigos valdymą.</p>
+        <p>Ryšys su prieigos įrenginiais vyksta per Bluetooth Low Energy (BLE), naudojant saugią komunikaciją ir sesijų valdymo mechanizmus.</p>
+        <p>Lokaliai saugomi jautresni duomenys yra apsaugoti šifravimu, o šifravimo raktų apsaugai naudojami Android platformos saugumo mechanizmai, įskaitant Android KeyStore.</p>
+        <p>Lokacijos, judėjimo ir jutiklių duomenys naudojami ne tik funkcionalumui, bet ir saugumui — siekiant aptikti nenatūralų priartėjimą, vietos klastojimą ir galimus ryšio retransliavimo (relay) atakų požymius. Tokiais atvejais automatinis atrakinimas gali būti ribojamas arba nevykdomas.</p>
+        <p>Safenter taiko technines ir programines priemones, skirtas maksimaliai apsaugoti duomenis ir sumažinti neteisėtos prieigos ar piktnaudžiavimo riziką.</p>
 
-<p>
-Safenter naudoja technines ir programines priemones, skirtas užtikrinti,
-kad prieigos duomenys būtų apdorojami saugiai. Prieigos sprendimai
-priimami lokaliai, be centrinės duomenų bazės.
-</p>
+        <h2>9. Vartotojo teisės</h2>
+        <p>Vartotojas gali valdyti, kokias Safenter funkcijas naudoja ir kokius leidimus suteikia aplikacijai.</p>
+        <p>Vartotojas gali:</p>
+        <ul>
+          <li>suteikti arba atšaukti leidimus per Android sistemos nustatymus</li>
+          <li>įjungti arba išjungti automatinio atrakinimo funkcijas</li>
+          <li>įjungti arba išjungti atsarginių kopijų / sinchronizavimo funkciją su Google Drive AppData</li>
+          <li>pašalinti lokaliai saugomus duomenis pašalindamas aplikaciją arba naudodamasis programos funkcijomis</li>
+          <li>atšaukti Google Drive prieigą</li>
+        </ul>
+        <p><strong>Svarbu:</strong> tam tikri leidimai (pvz., Bluetooth, lokacijos ir judėjimo) yra būtini automatinio atrakinimo funkcijai veikti ir jos saugumui užtikrinti. Jei šie leidimai nesuteikiami, funkcija gali neveikti arba veikti ribotai.</p>
 
-<h2>Duomenų saugojimas</h2>
+        <h2>10. Privatumo politikos keitimas</h2>
+        <p>Safenter gali atnaujinti šią privatumo politiką, siekiant atspindėti programos funkcijų ar teisinių reikalavimų pasikeitimus.</p>
+        <p>Apie esminius pakeitimus vartotojai gali būti informuojami programoje arba kitais įprastais informavimo būdais.</p>
+        <p>Atnaujinta privatumo politikos versija visada pateikiama su naujausia publikavimo data.</p>
 
-<p>
-Safenter nerenka ir nesaugo asmens duomenų išoriniuose serveriuose.
-Visa informacija lieka vartotojo įrenginyje ir gali būti bet kada
-pašalinta ištrinant aplikaciją.
-</p>
+        <h2>11. Kontaktai</h2>
+        <p class="contact"><a href="mailto:info@safenter.com">info@safenter.com</a></p>
+      </section>
 
-<h2>Kontaktai</h2>
+      <!-- EN -->
+      <section id="en" class="lang-section">
+        <h1>Safenter Privacy Policy</h1>
+        <div class="meta">
+          <strong>Last updated:</strong> 2026-03-19<br>
+          <strong>Version:</strong> 1.0
+        </div>
 
-<p>
-Jeigu turite klausimų dėl privatumo ar duomenų naudojimo, susisiekite:
-</p>
+        <h2>1. Introduction (what Safenter is)</h2>
+        <p>Safenter is a mobile application intended for secure control of physical access devices (for example, doors, gates, or barriers) using a smartphone.</p>
+        <p>The application interacts with Safenter physical devices that are connected to electrically controlled locks or other access control mechanisms. By using Bluetooth Low Energy (BLE) communication and proximity detection, the application enables the user’s phone to detect a nearby Safenter device and initiate secure communication.</p>
+        <p>When the user approaches, the Safenter device, after receiving a validated signal from the application, may automatically activate an electric lock or another controlled mechanism.</p>
+        <p>The Safenter system also allows access owners to manage and grant access rights to other users. Users may use the access granted to them under the defined conditions.</p>
+        <p>The application works in the background so that it can continuously detect nearby Safenter devices and automatically initiate interaction, allowing controlled locks to be unlocked without additional user actions.</p>
 
-<p>
-El. paštas: <a href="mailto:info@safenter.com">info@safenter.com</a>
-</p>
+        <h2>2. What data the application uses</h2>
+        <p>The application uses the following data:</p>
+        <ul>
+          <li>Bluetooth data (device identifiers, signal strength (RSSI), connection session data, and protocol data transmitted by devices)</li>
+          <li>Location data (precise device location data, including coordinates and accuracy)</li>
+          <li>Movement and sensor data (accelerometer, gyroscope, pressure sensor, as well as step and activity recognition data)</li>
+          <li>Device information (device model and operating system version)</li>
+          <li>Access identifiers (unique device identifiers, access keys, QR codes, and data transmitted through links)</li>
+          <li>Application configuration and settings data (stored on the device and, optionally, in the user’s Google account AppData storage)</li>
+        </ul>
 
-<hr />
+        <h2>3. What the data is used for</h2>
+        <p>The data used is intended solely to ensure the functionality and security of the application:</p>
+        <ul>
+          <li>Bluetooth data is used to detect Safenter devices and establish a secure connection with them</li>
+          <li>Location and movement data are used to determine whether the user is actually at a specific entrance and is naturally approaching it. This allows safe automatic unlocking only when the user is truly approaching the access point, while also evaluating possible security risk indicators such as location spoofing or communication relaying (relay attacks), where an attempt is made to simulate presence at the door from another location</li>
+          <li>Device information is used to optimize the application’s operation and ensure compatibility</li>
+          <li>Access identifiers are used for access verification and to ensure secure communication with devices.</li>
+          <li>Application configuration and settings data are used to store the user’s settings on the device and, if the user chooses, to synchronize them across the user’s devices using Google account AppData storage</li>
+        </ul>
 
-<h1>Privacy Policy – Safenter</h1>
+        <h2>4. Where data processing takes place</h2>
+        <p>The Bluetooth, location, movement, and sensor data used by Safenter are processed on the user’s device in real time in order to ensure the application’s functionality and security.</p>
+        <p>Application configuration, access settings, and access point information are stored on the device in encrypted form using local security mechanisms.</p>
+        <p>If the user chooses to enable backup or synchronization functionality, part of the application data may be stored in the user’s Google account Google Drive AppData storage. This data is used only for creating backups and restoring data across the user’s devices.</p>
+        <p>Safenter does not use the user’s Google account profile or email data.</p>
 
-<p><strong>Last updated:</strong> 2026-01-29</p>
+        <h2>5. Whether data is transferred to third parties</h2>
+        <p>Safenter does not transfer user data to third parties for advertising, profiling, or marketing purposes.</p>
+        <p>Data may be transferred only to the extent necessary for the operation of the application or for functionality chosen by the user:</p>
+        <ul>
+          <li>To Safenter devices via Bluetooth Low Energy (BLE) communication when secure communication with an access device is performed. During this communication, access identifiers (key identifiers), without transferring the keys themselves, are transmitted and used for access verification. Access devices may use these identifiers for event logging (for example, recording the time of entry) according to the rules defined by the owner.</li>
+          <li>To Google Drive AppData storage, only if the user independently enables backup or synchronization functionality. The application uses only the “drive.appdata” permission and does not collect the user’s Google profile or email information.</li>
+        </ul>
+        <p>Except for the cases indicated above, the data used by Safenter is not transferred to third parties and remains on the user’s device.</p>
 
-<p>
-Safenter is a mobile application designed for secure access control
-(e.g. unlocking doors or gates) using Bluetooth and device sensors.
-Your privacy is important to us.
-</p>
+        <h2>6. Explanation of permissions</h2>
+        <p>Safenter uses only those Android permissions that are necessary for the operation of the application, secure communication with access devices, and the automatic unlocking function.</p>
+        <p>Permissions used:</p>
+        <ul>
+          <li>Bluetooth permissions (BLUETOOTH_SCAN, BLUETOOTH_CONNECT) are used to detect nearby Safenter devices and establish a secure connection with them.</li>
+          <li>Location permissions (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, ACCESS_BACKGROUND_LOCATION) are used to determine whether the user is actually near a specific entrance and to ensure secure automatic unlocking. Background location permission is required so that this function also works when the application is not actively open.</li>
+          <li>Physical activity permission (ACTIVITY_RECOGNITION) is used to determine the movement mode and to ensure the security of automatic unlocking.</li>
+          <li>Notification permission (POST_NOTIFICATIONS) is used to inform about application operation and access events.</li>
+          <li>Internet permission (INTERNET) is used only for functions related to data synchronization and backups (for example, Google Drive AppData).</li>
+          <li>Foreground service permissions (FOREGROUND_SERVICE and related permissions) are used so that the application can run in the background and continue device detection and proximity evaluation.</li>
+          <li>The RECEIVE_BOOT_COMPLETED permission is used to restore application operation after the device restarts.</li>
+        </ul>
 
-<h2>Data we use</h2>
+        <h2>7. Data storage</h2>
+        <p>Data used by Safenter is primarily stored on the user’s device.</p>
+        <p>Application settings, access point information, and related configuration data are stored locally, while more sensitive data is stored in encrypted form using Android platform security mechanisms, including Android KeyStore.</p>
+        <p>Locally stored data includes:</p>
+        <ul>
+          <li>access point information;</li>
+          <li>application settings;</li>
+          <li>automatic unlocking configuration;</li>
+          <li>device-related identifiers.</li>
+        </ul>
+        <p>If the user enables backup or synchronization functionality, part of this data is stored in the user’s Google Drive AppData storage. This function is optional and is used only for restoring data across the user’s devices.</p>
+        <p>Safenter stores data for as long as necessary for the operation of the application. Locally stored data is deleted when the application is removed, while Google Drive AppData data is stored until the user deletes the backups or revokes access.</p>
 
-<p>Safenter may use the following permissions and data types:</p>
+        <h2>8. Security</h2>
+        <p>Safenter applies technical measures intended to protect user data and ensure secure access management.</p>
+        <p>Communication with access devices takes place over Bluetooth Low Energy (BLE), using secure communication and session management mechanisms.</p>
+        <p>Locally stored more sensitive data is protected by encryption, and Android platform security mechanisms, including Android KeyStore, are used to protect encryption keys.</p>
+        <p>Location, movement, and sensor data are used not only for functionality but also for security — in order to detect unnatural approach, location spoofing, and possible signs of communication relaying (relay attacks). In such cases, automatic unlocking may be restricted or not performed.</p>
+        <p>Safenter applies technical and software measures intended to provide maximum data protection and reduce the risk of unauthorized access or misuse.</p>
 
-<ul>
-  <li><strong>Location data</strong> – used only to determine proximity to a specific access point.</li>
-  <li><strong>Physical activity data</strong> – used as additional context for secure and intentional unlocking.</li>
-  <li><strong>Bluetooth</strong> – used to communicate with nearby access control devices.</li>
-</ul>
+        <h2>9. User rights</h2>
+        <p>The user may manage which Safenter functions are used and which permissions are granted to the application.</p>
+        <p>The user may:</p>
+        <ul>
+          <li>grant or revoke permissions through Android system settings</li>
+          <li>enable or disable automatic unlocking functions</li>
+          <li>enable or disable backup / synchronization functionality with Google Drive AppData</li>
+          <li>remove locally stored data by deleting the application or by using the application’s functions</li>
+          <li>revoke Google Drive access</li>
+        </ul>
+        <p><strong>Important:</strong> certain permissions (for example, Bluetooth, location, and movement) are necessary for the automatic unlocking function to operate and to ensure its security. If these permissions are not granted, the function may not work or may work only in a limited way.</p>
 
-<h2>How data is processed</h2>
+        <h2>10. Changes to the privacy policy</h2>
+        <p>Safenter may update this privacy policy in order to reflect changes in the application’s functions or legal requirements.</p>
+        <p>Users may be informed about material changes within the application or by other usual means of communication.</p>
+        <p>The updated version of the privacy policy is always provided with the latest publication date.</p>
 
-<ul>
-  <li>All data is processed <strong>locally on the device</strong>.</li>
-  <li>No data is <strong>sent to external servers</strong>.</li>
-  <li>No data is <strong>shared with third parties</strong>.</li>
-  <li>No data is used for <strong>advertising or tracking</strong>.</li>
-</ul>
+        <h2>11. Contact</h2>
+        <p class="contact"><a href="mailto:info@safenter.com">info@safenter.com</a></p>
+      </section>
+    </div>
+  </div>
 
-<h2>Data security</h2>
+  <script>
+    function showLang(lang) {
+      document.getElementById('lt').classList.remove('active');
+      document.getElementById('en').classList.remove('active');
+      document.getElementById('btn-lt').classList.remove('active');
+      document.getElementById('btn-en').classList.remove('active');
 
-<p>
-Safenter uses technical and software-based measures to ensure secure
-local processing of access-related data. Access decisions are made
-without reliance on a centralized backend.
-</p>
+      document.getElementById(lang).classList.add('active');
+      document.getElementById('btn-' + lang).classList.add('active');
 
-<h2>Data retention</h2>
-
-<p>
-Safenter does not collect or store personal data on external systems.
-All information remains on the user’s device and can be removed at any
-time by uninstalling the application.
-</p>
-
-<h2>Contact</h2>
-
-<p>
-If you have any questions regarding privacy or data usage, please contact:
-</p>
-
-<p>
-Email: <a href="mailto:info@safenter.com">info@safenter.com</a>
-</p>
-
+      document.documentElement.lang = lang;
+    }
+  </script>
 </body>
 </html>
